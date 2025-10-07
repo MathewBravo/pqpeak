@@ -15,15 +15,14 @@ pub struct ParquetFileStatistics{
 // !TODO Add Nullable info
 #[derive(Debug)]
 pub struct ColumnDescriptors{
-    name: String,
-    phys_type: Type,
-    logical_type: Option<LogicalType>,
-    percision: Option<i32>,
-    scale: Option<i32>,
-    nullable: bool,
-    nc: Option<u64>
+    pub name: String,
+    pub phys_type: Type,
+    pub logical_type: Option<LogicalType>,
+    pub percision: Option<i32>,
+    pub scale: Option<i32>,
+    pub nullable: bool,
+    pub nc: Option<u64>
 }
-
 
 pub struct VerboseParquetFileStatistics;
 
